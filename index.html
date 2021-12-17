@@ -1,10 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+
+  <title>Xiangtao Kong's Homepage</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Xiangtao Kong is currently a senior researcher at Huawei Noah's Ark Lab">
+  <meta name="keywords" content="Xiangtao Kong, 孔祥涛, kongxiangtao, Computer, Vision">
+  <meta name="author" content="Xiangtao Kong" />
+
+  <link rel="stylesheet" href="w3.css">
+
+  <style>
+  .w3-sidebar a {font-family: "Roboto", sans-serif}
+  body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+  </style>
+
+  <link rel="icon" type="image/x-icon" href="images/icons.ico">
+  <!--
+  <script src="jquery.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
+  //-->
+
 </head>
-<body>
+
+
+<body class="w3-content" style="max-width:1000px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-blue-gray w3-collapse w3-top w3-right" style="z-index:3;width:150px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <h3><b>KXT</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
+    <a href="#home" class="w3-bar-item w3-button">Home</a>
+    <a href="#news" class="w3-bar-item w3-button">News</a>
+    <a href="#Publications" class="w3-bar-item w3-button">Publications</a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-blue-gray w3-xlarge">
+  <div class="w3-bar-item w3-padding-24">KXT</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right"  style="font-stretch: extra-expanded;" onclick="w3_open()"><b>≡</b></a>
+  </div>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:150px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- The Home Section -->
+
+    <div class="w3-container w3-center w3-padding-32" id="home">
+
+        <style>
+          .left {
+            float: left;
+            width: 270px;
+            height: 230px;
+          }
+          .right {
+            margin-left: 290px;
+            margin-top: -20px;
+            height: 230px;
+          }
+        </style>
+
+      <div class="left">
+        <img style="width: 80%;max-width: 400px" alt="profile photo" src="images/KXT.jpg">
+      </div>
+      <div class="right">
+        <p style="font-size:23px"> Xiangtao Kong (孔祥涛)</p>
+
+        <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
+          I am currently a M.S. student in <a href="https://xpixel.group/">X-Pixel</a> at <a href="http://english.siat.cas.cn/">SIAT-CAS</a> supervised by Prof. <a href="https://scholar.google.com/citations?hl=zh-CN&user=OSDCB0UAAAAJ">Chao Dong</a> and Prof. <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=zh-CN">Yu Qiao</a>. I mainly focus on the Low-level Vision, Super-Resolution, and Interpretability of Deep Learning in the Image Processing field. I obtained my Honors B.Eng. degree from <a href="https://www.en.sdu.edu.cn/">Shandong University</a> by 2020.
+        </p>
+        <p class="w3-center">
+          <a href="mailto:xt.kong@siat.ac.cn">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=lueNzSgAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://github.com/Xiangtaokong"> GitHub </a>
+        </p>
+      </div>
+
+
+  </div>
+
+<!-- The News Section -->
+  <div class="w3-container w3-light-grey w3-padding-32" id="news">
+   <h2>News</h2>
+      <p><li> 04/2021, Join SenseTime as a research intern, work with Yu Zhang.</li></p>
+      <p><li> 03/2021, One paper accept by CVPR, 2021.</li></p>
+      <p><li> 08/2020, One paper accept by ECCV Workshops, 2020.</li></p>
+      <p><li> 06/2020, I obtain my Honors B.Eng. degree from <a href="https://www.en.sdu.edu.cn/">Shandong University</a>.</li></p>
+      <p><li> 05/2020, We get fourth place and lowest parameters in Efficient Super-Resoluton Challenge of AIM 2020.</li></p>
+      <p><li> 09/2019, Join <a href="https://xpixel.group/">X-Pixel</a>, supervised by Chao Dong and Yu Qiao.</li></p>
+      <p><li> 10/2018, We win First Prize of China Undergraduate Mathematical Contest in Modeling (CUMCM).</li></p>
+
+      <!--
+      <p><li> 06/2020, two papers have been accepted by <a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial">ICML 2020</a>.</li></p>
+      <p><li> 07/2020, one paper has been accepted by <a href="http://2020.acmmm.org/accepted-paper-id-list.txt">ACM MM 2020</a>.</li></p>
+      <p><li> 02/2020, seven papers have been accepted by <a href="http://openaccess.thecvf.com/menu.py">CVPR 2020</a>.</li></p>
+      <p><li> 01/2020, one paper has been accepted by <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE TNNLS</a>.</li></p>
+      <p><li> 11/2019, three papers have been accepted by <a href="https://aaai.org/Conferences/AAAI-20/wp-content/uploads/2020/01/AAAI-20-Accepted-Paper-List.pdf">AAAI 2020</a>.</li></p>
+      -->
+  </div>
+
+ <!-- The Publications Section -->
+  <div class="w3-container w3-padding-32"" id="Publications">
+    <h2>Publications</h2>
+    <ol>
+      <style>
+        .leftp {
+          float: left;
+          width: 250px;
+          margin-left: -30px;
+          margin-top:0px;
+          height: 150px;
+        }
+        .rightp {
+          margin-left: 260px;
+          margin-top: 0px;
+          height: 150px;
+        }
+      </style>
+
+      <div class="leftp">
+        <img style="width: 100%;max-width: 400px" alt="profile photo" src="images/ClassSR_CVPR2021.png">
+      </div>
+      <div class="rightp">
+        <td class="paper_info" valign="top">
+          <!-- <a href="" class="paper_title">ClassSR: A General Framework to Accelerate Super-Resolution Networks by Data Characteristic</a> -->
+          <div class="paper_title">ClassSR: A General Framework to Accelerate Super-Resolution Networks by
+            Data Characteristic</div>
+          <div class="paper_author"><strong>Xiangtao Kong</strong>, Hengyuan Zhao, Yu Qiao,
+            Chao Dong</div>
+          <div class="paper_pub"> <i>Computer Vision and Pattern Recognition <strong>(CVPR 2021)</strong></span></i></div>
+          <div class="paper_links">
+                            <span>
+                                <a class="paper_link" href="https://arxiv.org/pdf/2103.04039.pdf">Paper(arxiv)</a>
+                            </span>
+            <span>|</span>
+            <span>
+                                <a class="paper_link" href="https://github.com/Xiangtaokong/ClassSR">Codes</a>
+                            </span>
+            <span>|</span>
+            <span>
+                                <a class="paper_link" href="">BibTex</a>
+                            </span>
+          </div>
+        </td>
+      </div>
+
+      <div class="leftp">
+        <img style="width: 100%;max-width: 400px" alt="profile photo" src="images/pan_ECCV2020.png">
+      </div>
+      <div class="rightp">
+        <td class="paper_info" valign="top">
+          <!-- <a href="" class="paper_title">Efficient Image Super-Resolution Using Pixel Attention</a> -->
+          <div class="paper_title">Efficient Image Super-Resolution Using Pixel Attention</div>
+          <div class="paper_author">Hengyuan Zhao, <strong>Xiangtao Kong</strong>, Jingwen He,
+            Yu Qiao, Chao Dong</div>
+          <div class="paper_pub"> <i>European Conference on Computer Vision Workshops <strong>(ECCVW 2020)</strong></i></div>
+          <div class="paper_pub"> We got fourth place of Efficient Image Super Resolution Challenge in
+            total 150 participants. (The lowest paramters, 272K)</div>
+          <div class="paper_links">
+                            <span>
+                                <a class="paper_link" href="https://arxiv.org/pdf/2010.01073.pdf">Paper(arxiv)</a>
+                            </span>
+            <span>|</span>
+            <span>
+                                <a class="paper_link" href="https://github.com/zhaohengyuan1/PAN">Codes</a>
+                            </span>
+            <span>|</span>
+            <span>
+                                <a class="paper_link" href="">BibTex</a>
+                            </span>
+          </div>
+        </td>
+      </div>
+
+
 
 </body>
 </html>
